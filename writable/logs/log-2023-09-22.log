@@ -1,0 +1,783 @@
+ERROR - 2023-09-22 09:08:48 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:08:48 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:10:57 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:10:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:10:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:10:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:10:58 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:10:58 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:10:59 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:10:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:10:59 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:10:59 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:11:06 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:11:06 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:12:42 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:12:42 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mains`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:16:11 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:16:11 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tables_students`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:16:15 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:16:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tables_students`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:16:15 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:16:15 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tables_students`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:16:16 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:16:16 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tables_students`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+ERROR - 2023-09-22 09:16:26 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'tables_students', 3306, '', 0)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#9 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'tables_students' in C:\laragon\www\INFO\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\INFO\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\INFO\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\INFO\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\INFO\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\INFO\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\laragon\www\INFO\app\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+#6 C:\laragon\www\INFO\system\CodeIgniter.php(919): App\Controllers\MainController->test()
+#7 C:\laragon\www\INFO\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+#8 C:\laragon\www\INFO\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\INFO\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\INFO\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+CRITICAL - 2023-09-22 09:16:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'tables_students'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tables_students`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\MainController.php(50): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:04:07 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:08:01 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:08:16 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:21:40 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:22:33 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:30:36 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:31:11 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:31:29 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:31:30 --> Class "App\Controllers\MainModel" not found
+in APPPATH\Controllers\MainController.php on line 64.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:32:25 --> Namespace declaration statement has to be the very first statement or after any declare call in the script
+in APPPATH\Controllers\MainController.php on line 4.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-09-22 13:37:33 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:39:19 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:41:24 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:46:42 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:50:29 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:52:28 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:53:47 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:55:49 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:56:04 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 13:56:19 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 14:06:53 --> Undefined array key "id"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 14:07:10 --> Undefined array key "id"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 14:10:56 --> Undefined array key "id"
+in APPPATH\Views\main.php on line 50.
+ 1 APPPATH\Views\main.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\INFO\\app\\Views\\main.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\INFO\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(53): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 14:11:56 --> Undefined array key "id"
+in APPPATH\Views\main.php on line 50.
+ 1 APPPATH\Views\main.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\INFO\\app\\Views\\main.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\INFO\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(53): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 14:12:48 --> Undefined array key "id"
+in APPPATH\Views\main.php on line 50.
+ 1 APPPATH\Views\main.php(50): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\laragon\\www\\INFO\\app\\Views\\main.php', 50)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\INFO\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(53): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
+CRITICAL - 2023-09-22 14:14:55 --> Undefined array key "ID"
+in APPPATH\Controllers\MainController.php on line 12.
+ 1 APPPATH\Controllers\MainController.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "ID"', 'C:\\laragon\\www\\INFO\\app\\Controllers\\MainController.php', 12)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->Save()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\INFO\\public\\index.php')
