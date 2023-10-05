@@ -4,55 +4,71 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\MainModel;
-
 class MainController extends BaseController
 {
-    public function Save()
+    public function delete($data)
     {
-        $ID = $_POST['ID'];
+        $main = new MainModel();
+        $main->delete($data);
+        return redirect()->to('/test');
+    }
+    
+    
+    public function updates(){
+  
+        $data =[
+            'StudName' => $this->request->getPost('StudName'),
+            'StudGender' => $this->request->getPost('StudGender'),
+            'StudCourse' => $this->request->getPost('StudCourse'),
+            'StudSection' => $this->request->getPost('StudSection'),
+            'StudYear' => $this->request->getPost('StudYear'),
+            'Section' => $this->request->getPost('Section'),
+        ];
+        $main = new MainModel();
+        $main->set($data)->where($data)->update();
+        return redirect()->to('/test');
+    }
+    public function update($ID)
+    {
+        $main = new MainModel();
+        
+        $data = [ 
+            'main' => $main -> findAll(),
+            'var'=> $main->find($ID),
+        ];
+        return view('main', $data);
+    }
+
+    public function save()
+    {
+        $ID = $this->request->getPost('ID');
         $data = [
             'StudName' => $this->request->getPost('StudName'),
             'StudGender' => $this->request->getPost('StudGender'),
             'StudCourse' => $this->request->getPost('StudCourse'),
             'StudSection' => $this->request->getPost('StudSection'),
             'StudYear' => $this->request->getPost('StudYear'),
+            'Section' => $this->request->getPost('Section'),
         ];
-
-        if($id!= null){
-            $main = new MainModel();
-            $main->set($data)->where('id', $id)->Update();
-        }else{
-            $main = new MainModel();
-            $main->Save($data);
-        }
-        return redirect()->to('/test');
-    }
-
-    public function Delete($id)
-    {
+        
         $main = new MainModel();
-        $main->Delete($id);
+
+        if (!empty($ID)){
+            $main->update($ID, $data);
+        }
+        else 
+        {
+            $main->save($data);
+        }
+
         return redirect()->to('/test');
     }
-
-    public function Update($id)
-    {
-        $mmodel = new MainModel();
-        $data = [
-            'main' => $mmodel->findAll(),
-            'var' => $mmodel->where('id', $id)->first(),
-        ];
-        return view('main', $data);
-    }    
-
     public function test()
     {
-        $mmodel = new MainModel();
-        $data['main'] = $mmodel->findAll();
-        //var_dump(data);
-        return view('main', $data);
+        $main = new MainModel();
+        $data['main'] = $main->findAll();
+        return view ('main', $data);
     }
-
     public function index()
     {
         //
