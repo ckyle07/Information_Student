@@ -17,6 +17,7 @@
             <br>
             <label for="StudGender">Gender: </label>
             <select type="box" name="StudGender" placeholder="Student Gender" name="StudGender" required value="<?= isset($var['StudGender']) ? $var['StudGender'] : '' ?>">>
+                <option></option>
                 <option>Female</option>
                 <option>Male</option>
             </select>
